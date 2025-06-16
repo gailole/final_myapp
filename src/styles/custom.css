@@ -1,0 +1,354 @@
+/* Custom dark theme for the Telegram WebApp */
+
+/* Set Telegram WebApp theme color */
+:root {
+  color-scheme: dark;
+  
+  /* Colors - Apple-inspired palette */
+  --deep-dark: #000000;
+  --surface-color: rgba(28, 28, 30, 0.92);
+  --text-color: #FFFFFF;
+  --text-secondary: #FFFFFF;
+  --accent-color: #2997FF;
+  --accent-dark: #0071E3;
+  
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Shadows */
+  --shadow-small: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.16);
+  --shadow-large: 0 8px 24px rgba(0, 0, 0, 0.24);
+  
+  /* Borders */
+  --border-subtle: 1px solid rgba(255, 255, 255, 0.1);
+  --border-medium: 1px solid rgba(255, 255, 255, 0.18);
+  --border-accent: 1px solid rgba(41, 151, 255, 0.3);
+
+  /* Case study image aspect ratio - Modify this value to change the height */
+  --case-study-aspect-ratio: 100.375%; /* This is 56.25% (16:9) + 50% increase */
+}
+
+/* Header gradient - Apple style */
+.header-gradient {
+  background: var(--surface-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: var(--border-subtle);
+}
+
+/* User profile section */
+.user-avatar {
+  border: 2px solid var(--accent-color);
+  box-shadow: var(--shadow-medium);
+  border-radius: 50% !important;
+  width: 80px !important;
+  height: 80px !important;
+  min-width: 80px;
+  min-height: 80px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user-name {
+  color: var(--text-color);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Product card styles */
+.product-card {
+  background: var(--surface-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: var(--border-subtle);
+  transition: all var(--transition-normal);
+  height: 100%;
+  width: 100%;
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+  border: var(--border-medium);
+}
+
+.product-image {
+  transition: transform var(--transition-slow);
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Carousel customization */
+.product-carousel {
+  padding: 0 0;
+  overflow: visible !important;
+}
+
+.carousel-slide {
+  height: auto;
+  transition: all var(--transition-normal);
+  opacity: 1 !important;
+  transform: none !important;
+  display: flex;
+}
+
+/* Case Studies Styles */
+.case-studies {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.case-studies-swiper {
+  padding: 0 0;
+  will-change: transform;
+  contain: content;
+}
+
+.case-study-card {
+  background: var(--surface-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--border-subtle);
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+  border-radius: 1rem;
+  contain: content;
+}
+
+.case-study-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.case-study-media-section {
+  position: relative;
+  width: 100%;
+}
+
+.case-study-image-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.case-study-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: var(--case-study-aspect-ratio);
+  background: var(--surface-color);
+  border-radius: 12px;
+  overflow: hidden;
+  contain: strict;
+}
+
+.case-study-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
+}
+
+.navigation-buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.navigation-buttons.has-prev {
+  justify-content: space-between;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all var(--transition-normal);
+  opacity: 0.7;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.case-study-info {
+  padding: 0 0.5rem;
+}
+
+.case-study-header {
+  margin-bottom: 1.5rem;
+}
+
+.case-study-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.case-study-description {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.case-study-features {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.feature-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+/* Workflow steps styles */
+.workflow-step {
+  background: var(--surface-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--border-subtle);
+  transition: all var(--transition-normal);
+}
+
+.workflow-step:hover {
+  border: var(--border-medium);
+  transform: translateX(8px);
+}
+
+.workflow-icon-container {
+  background: rgba(41, 151, 255, 0.1);
+  border: var(--border-accent);
+}
+
+/* Modal styles */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  background: var(--surface-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: var(--border-medium);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .case-study-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .case-study-card {
+    padding: 1.5rem;
+  }
+  
+  .case-study-title {
+    font-size: 1.75rem;
+  }
+  
+  .case-study-description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .case-study-card {
+    padding: 1rem;
+  }
+  
+  .navigation-buttons {
+    padding: 0 0.5rem;
+  }
+  
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* Swiper pagination customization */
+.swiper-pagination-bullet {
+  background: var(--accent-color) !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Swiper lazy loading */
+.swiper-lazy-preloader {
+  border-color: var(--accent-color);
+  border-top-color: transparent;
+}
+
+/* Base styles */
+body {
+  background: var(--deep-dark) !important;
+  letter-spacing: -0.02em;
+}
+
+/* Telegram WebApp theme */
+:root {
+  --tg-theme-bg-color: var(--deep-dark);
+  --tg-theme-secondary-bg-color: var(--surface-color);
+  --tg-theme-text-color: var(--text-color);
+  --tg-theme-hint-color: var(--accent-color);
+  --tg-theme-link-color: var(--accent-dark);
+  --tg-theme-button-color: var(--accent-color);
+  --tg-theme-button-text-color: var(--deep-dark);
+}
