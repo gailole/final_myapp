@@ -11,7 +11,7 @@ const cases = [
     id: 1,
     title: 'Онлайн-магазин',
     description: 'Бот мини-магазин внутри Telegram с удобным просмотром и заказом товаров.',
-    image: 'https://files.salebot.pro/uploads/file_item/file/595486/case1.gif',
+    image: 'https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/cases/case1.gif',
     features: [
       'Платформа: Telegram',
       'Каталог товаров',
