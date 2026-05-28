@@ -25,7 +25,7 @@ const cases = [
     id: 2,
     title: 'Клуб по подписке',
     description: 'Бот для закрытого клуба — контроль доступа, материалы и автоматизация.',
-    image: 'https://files.salebot.pro/uploads/file_item/file/595486/case2.gif',
+    image: 'https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/cases/case2.gif',
     features: [
       'Платформа: Telegram',
       'Платежная система: Lava.top',
@@ -39,7 +39,7 @@ const cases = [
     id: 3,
     title: 'Продажа инфопродуктов',
     description: 'Бот с каруселью продуктов, автрасчетом цены и выдачей доступа в Getcource.',
-    image: 'https://files.salebot.pro/uploads/file_item/file/595486/case3.gif',
+    image: 'https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/cases/case3.gif',
     features: [
       'Платформа: Telegram',
       'Платежная система: Prodamus',
@@ -53,7 +53,7 @@ const cases = [
     id: 4,
     title: 'WebApp-визитка',
     description: 'Удобное приложение-визитка для сбора контактов и доступом к информации.',
-    image: 'https://files.salebot.pro/uploads/file_item/file/595486/case5.gif',
+    image: 'https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/cases/case4.gif',
     features: [
       'Сбор базы клиентов',
       'Личный кабинет',
@@ -67,7 +67,7 @@ const cases = [
     id: 5,
     title: 'Колесо фортуны',
     description: 'Геймификация доступная для клиентов, которые приобрели основной продукт.',
-    image: 'https://files.salebot.pro/uploads/file_item/file/595486/case4.gif',
+    image: 'https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/cases/case5.gif',
     features: [
       'Проверка покупки продукта',
       'Выпадение призов без повтора',
