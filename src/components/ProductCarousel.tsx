@@ -11,35 +11,35 @@ export const products = [
     id: 1,
     title: "Разработка ботов в Salebot",
     price: 199,
-    image: "https://files.salebot.pro/uploads/file_item/file/595486/salebot.png",
+    image: "https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/product/1.png",
     description: "Сохрани клиентскую базу — переведи аудиторию в бота. Анализируй и сегментируй, запускай геймификацию, онлайн-продажи, подписки и другие механики вовлечения и монетизации."
   },
   {
     id: 2,
     title: "Онлайн-школы на GetCource",
     price: 299,
-    image: "https://files.salebot.pro/uploads/file_item/file/595486/get.png",
+    image: "https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/product/2.png",
     description: "Getcourse — сервис для онлайн-обучения, воронок продаж, рассылок и вебинаров. Подходит экспертам и школам: удобно вести курсы, автоматизировать продажи и работать с клиентами."
   },
   {
     id: 3,
     title: "Автоматизация с n8n",
     price: 149,
-    image: "https://files.salebot.pro/uploads/file_item/file/595486/3.png",
+    image: "https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/product/3.png",
     description: "Нужно связать сервисы? Настрою n8n на своём сервере — он автоматизирует любые процессы между сервисами с открытым API: сложные цепочки, логика условий, обработка данных и интеграции в одном потоке."
   },
   {
     id: 4,
     title: "Приложение в Telegram",
     price: 249,
-    image: "https://files.salebot.pro/uploads/file_item/file/595486/webapp2.png",
+    image: "https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/product/4.png",
     description: "Web App для Telegram — идеальный способ превратить вашего бота в полноценное приложение с интерфейсом, API-интеграцией и логикой на стороне сервера."
   },
   {
     id: 5,
     title: "Интеграция ИИ от OpenAI",
     price: 179,
-    image: "https://files.salebot.pro/uploads/file_item/file/595486/gpt2.png",
+    image: "https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/product/5.png",
     description: "Интегрирую OpenAI API в ваши продукты — реализую умные сценарии: автоответы, персонализированные подсказки, интеллектуальный разбор запросов, анализ текста и генерацию контента под любые задачи."
   }
 ];
