@@ -6,7 +6,7 @@ export const LoadingScreen: React.FC = () => {
       <div className="flex flex-col items-center">
         <div className="relative">
           <img 
-            src="https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/product%2F8cf66036-1176-11ee-8849-673f85e4115a.gif" 
+            src="https://s3.ru1.storage.beget.cloud/90a0a6466548-renowned-trish/product%2F6.gif" 
             alt="Loading..."
             className="w-48 h-48"
           />
